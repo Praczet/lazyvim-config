@@ -1,0 +1,23 @@
+# Ignore swap files
+*.swp
+*.swo
+*.swn
+
+# Ignore backup files
+*.bak
+*.tmp
+*.backup
+
+# Ignore undo history (if used)
+undodir/
+
+# Ignore compiled or temporary files
+.cache/
+session.vim
+*.log
+
+# LazyVim plugin directories (optional)
+# lazy-lock.json # If you don't want to share the exact plugin versions
+#
+# If you're using packer and prefer not to share the generated file
+packer_compiled.lua
