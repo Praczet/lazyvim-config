@@ -21,3 +21,5 @@ session.vim
 #
 # If you're using packer and prefer not to share the generated file
 packer_compiled.lua
+
+spell/
