@@ -79,12 +79,34 @@ To use this configuration:
 
 1. Clone the repository:
 
-   ```sh git clone https://github.com/Praczet/lazyvim-config.git ~/.config/nvim
-
+   ```sh
+   git clone https://github.com/Praczet/lazyvim-config.git ~/.config/nvim
    ```
 
 2. Install the dependencies as mentioned in the LazyVim
    [documentation](https://lazyvim.github.io/installation).
+
+## UFO - Custom fold_virt_text_handler
+
+My main plugin that I use for folding is kevinhwang91/nvim-ufo. I like it a lot, 
+but there was one feature that I could not find in its configuration: 
+displaying in folded Doc Comment the actual comment. Let's talk example:
+
+Here is php code (unfolded).
+
+![image](https://github.com/user-attachments/assets/26ed9abd-221e-4259-a569-4bcf4ce55c57)
+
+Here is how by default UFO folds and displays PHPDoc 
+
+![image](https://github.com/user-attachments/assets/b20288f7-5705-4315-9963-4a297aeb7a62)
+
+And here is how I want it :-D
+
+![image](https://github.com/user-attachments/assets/498a7f24-e9a5-460f-bdf5-0b0a4bcb1972)
+
+In a few words when it folds comment block I check if the first line is empty 
+(apart the comment it self `/**`) is so I put in the virtual text the next line. 
+
 
 ## Suggestions and Feedback
 
